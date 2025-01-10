@@ -11,11 +11,11 @@ function showShoes(data) {
   const showShoes = document.getElementById("showShoes");
   for (let i = 0; i < data.length; i++) {
     showShoes.innerHTML += `
-    <div class="card" style="width: 35rem; height : 43rem;">
+    <div class="card" style="width: 35rem; height : 44rem;">
         <img src="${data[i].Image}">
         <div class="card-body">
           <h5 class="card-title">${data[i].Name}</h5>
-          <p class="card-text">${data[i].Price}</p> 
+          <p class="text">${data[i].Price}</p> 
         </div>
       </div>
         `;
@@ -24,3 +24,4 @@ function showShoes(data) {
 //${}: dùng để bỏ thuộc tính vào trong dấu ``
 
 getShoes();
+
